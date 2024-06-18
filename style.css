@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #f2c14e;
+    --winning-blocks: rgb(176, 169, 144); /* Set the winning color to RGB value */
+}
+
+
+body {
+    font-family: 'Finger Paint', cursive;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #ffffff; /* White text color */
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    color: #ff8000; /* Orange color for headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2e2e2e; /* Slightly lighter background color for container */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Increased shadow */
+}
+
+#gameboard {
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 40px;
+}
+ 
+ element.style {
+    background-color: rgb(176 169 144);
+}
+ 
+.box {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: #ff8000;
+    background-color: #3e3e3e; /* Darker gray for box background */
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #4e4e4e; /* Darker gray on hover */
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ff8000; /* Orange button color */
+    color: #fff; /* White text color */
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff9933; /* Darker orange on hover */
+}
